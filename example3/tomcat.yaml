@@ -1,0 +1,8 @@
+---
+- name: Install Tomcat App server
+  hosts: app
+  become: yes
+  become_method: sudo
+  roles:
+    - jdk
+    - tomcat
